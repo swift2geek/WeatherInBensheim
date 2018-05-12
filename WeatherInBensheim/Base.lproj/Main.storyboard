@@ -24,6 +24,13 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cnd-s5-f2r">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
                                 <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mandelbaumbluete_in_Bensheim" translatesAutoresizingMaskIntoConstraints="NO" id="Fb5-gV-L6C">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gkm-RT-IYH">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.43196168664383561" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="yff-TB-zDO">
                                         <rect key="frame" x="20" y="20" width="374" height="260"/>
                                         <subviews>
@@ -74,10 +81,18 @@
                                 <color key="backgroundColor" red="0.23815125589061814" green="0.62651536638176164" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="AQg-Bu-5aR"/>
+                                    <constraint firstAttribute="bottom" secondItem="Fb5-gV-L6C" secondAttribute="bottom" id="BMa-kl-nrk"/>
                                     <constraint firstAttribute="bottom" secondItem="yff-TB-zDO" secondAttribute="bottom" constant="20" id="NQ5-o2-ftt"/>
                                     <constraint firstItem="yff-TB-zDO" firstAttribute="leading" secondItem="cnd-s5-f2r" secondAttribute="leading" constant="20" id="VHu-23-tQZ"/>
                                     <constraint firstItem="yff-TB-zDO" firstAttribute="top" secondItem="cnd-s5-f2r" secondAttribute="top" constant="20" id="ZZc-yU-mjj"/>
+                                    <constraint firstAttribute="bottom" secondItem="gkm-RT-IYH" secondAttribute="bottom" id="bxK-zv-0iP"/>
+                                    <constraint firstAttribute="trailing" secondItem="Fb5-gV-L6C" secondAttribute="trailing" id="cUk-Y9-Jue"/>
                                     <constraint firstAttribute="trailing" secondItem="yff-TB-zDO" secondAttribute="trailing" constant="20" id="eIf-kk-xaR"/>
+                                    <constraint firstItem="Fb5-gV-L6C" firstAttribute="top" secondItem="cnd-s5-f2r" secondAttribute="top" id="f8O-43-pIC"/>
+                                    <constraint firstItem="gkm-RT-IYH" firstAttribute="top" secondItem="cnd-s5-f2r" secondAttribute="top" id="fN7-2s-C0t"/>
+                                    <constraint firstItem="gkm-RT-IYH" firstAttribute="leading" secondItem="cnd-s5-f2r" secondAttribute="leading" id="gNr-Px-jxR"/>
+                                    <constraint firstItem="Fb5-gV-L6C" firstAttribute="leading" secondItem="cnd-s5-f2r" secondAttribute="leading" id="ngi-hg-ECh"/>
+                                    <constraint firstAttribute="trailing" secondItem="gkm-RT-IYH" secondAttribute="trailing" id="qFa-aq-lI3"/>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="67" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="icf-II-ayy">
@@ -202,6 +217,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Mandelbaumbluete_in_Bensheim" width="1280" height="853"/>
         <image name="Rain" width="92" height="92"/>
     </resources>
 </document>
